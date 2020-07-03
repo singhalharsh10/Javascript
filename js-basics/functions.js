@@ -26,7 +26,7 @@ function alpha(){
  console.log(gamma())
 
 
-//  polymorphism in JS
+//  polymorphism in JS    if we define 2 same function then older defintion gets replaced by new defintion
 
 function area (height , width)
 {
@@ -49,3 +49,12 @@ console.log(area(3,4))
 console.log('area 4', area(4))
 
 console.log('area 4', marea(4))
+
+function hello()
+{
+    console.log("Hello World  "+ arguments[0] +"  " + arguments[1])
+}
+
+hello()
+hello(1,2)
+hello("adcsf","sfvfd")
