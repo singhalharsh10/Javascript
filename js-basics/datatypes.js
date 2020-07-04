@@ -8,6 +8,40 @@ function a()
 
 let b=1;
 
+console.log(b);
+
+// let a= [1,2,3,4];
+// console.log(a);
+
+
+// Variables
+c=20;     //Globsl Varible
+var e=30;   //Functiom Scope
+
+function fun()
+{
+    let a=5;
+    if(a===5)
+    {
+        b=10;
+        console.log(b);
+    }
+    console.log(b);  ///It will print value 1
+}
+
+
+let f=23;  ///Block Scope
+
+
+
+
+
+
+
+
+
+
+
 console.log(typeof 133)
 console.log(typeof 345.65)
 

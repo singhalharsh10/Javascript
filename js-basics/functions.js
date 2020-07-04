@@ -14,6 +14,9 @@ function alpha(){
      return 'B'
  }
 
+
+
+//  Function hoisting
  let gamma = function()
  {
      return "C"
@@ -34,6 +37,8 @@ return height*width;
 }
 
 
+
+// Functon Declraration
 function marea(height, width)
 {
     if( typeof width ===  'undefined'  )
