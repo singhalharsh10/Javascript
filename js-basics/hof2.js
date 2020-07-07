@@ -1,11 +1,12 @@
 function greet(name) {
     console.log('Hello', name)
 }
+
 function createGreeter(greeting) {
 
     function greet(name) {
-        // here we treat as if name is function
-        console.log(greeting, name())
+        // here we treat as if name is string
+        console.log(greeting, name)
     }
 
     return greet
@@ -28,4 +29,3 @@ console.log(g1('Prateek'))
 
 console.log(g2('Arnav'))
 console.log(g2('Prateek'))
-© 2020 GitHub, Inc.

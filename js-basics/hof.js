@@ -5,10 +5,12 @@
 function greet(name) {
     console.log('Hello', name)
 }
+
+// Higher Order Function(Allowus to pass greet as a argument)
 function createGreeter(greeting) {
 
     function greet(name) {
-        // here we treat as if name is function
+        // here we treat as if name is function because get name function is passes as a argument
         console.log(greeting, name())
     }
 
@@ -32,4 +34,3 @@ console.log(g1('Prateek'))
 
 console.log(g2('Arnav'))
 console.log(g2('Prateek'))
-© 2020 GitHub, Inc.
