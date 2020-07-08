@@ -24,7 +24,7 @@ console.log(str.__proto__.__proto__ == obj.__proto__)
 console.log(num.__proto__.__proto__ == obj.__proto__)
 console.log(bool.__proto__.__proto__ == obj.__proto__)
 console.log(arr.__proto__.__proto__ == obj.__proto__)
-console.log(fun.__proto__.__proto__ == obj.__proto__)
+    // console.log(fun.__proto__.__proto__ == obj.__proto__)
 
 
 // Everything indirectly inherits from the same thing
@@ -46,6 +46,9 @@ console.log(num.__proto__ == Number.prototype)
 
 // .__proto__ is a pointer which points to that object from which current object has been inherited
 // .prototype is predefined from which objects made
+// example- Object.prototype will make x and x.__proto__ will point ki vo kha se bankar aaya h
+//  let x=Object.create(object.prototype)
+//  x.__proto__
 
 
 
@@ -54,15 +57,20 @@ console.log(num.__proto__ == Number.prototype)
 console.log(str.charAt(4))
 console.log(typeof str.charAt) // ? 
 let str2 = "dgndgn"
-console.log(str.charAt == str2.charAt) // true
+console.log(str.charAt == str2.charAt) // true it means both are made from same 
 
-str.charAt = function() { return 'X' } // does not make a difference
+str.charAt = function() { return 'X' } // does not make a difference not gets exexcuted
 
-String.prototype.charAt = function() { return 'X' }
+String.prototype.charAt = function() { return 'X' } //Gets executed as we have changed the definition of function on level(Prototype) on which it is working
 console.log(str.charAt(1))
 
 // String.prototype contains all default string functions
 // like charAt, indexOf, substring, slice etc 
+
+// Join normal syntax
+// [1,2,3,4].join['any sign']
+
+
 
 Array.prototype.joinOriginal = Array.prototype.join
 
